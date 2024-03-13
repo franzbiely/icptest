@@ -59,8 +59,6 @@ function App() {
         return Math.random() * (max - min) + min;
     }
 
-    
-
     // Instantiating bubble
     var bubble_id = 0;
     var speedBorn = 100;
@@ -87,7 +85,8 @@ function App() {
   }, [])
   return (
     <div className = "App">
-        <h1>My JS Bubble <br /><img src="/logo2.svg" alt="DFINITY logo" /></h1>
+        <h1>My JS Bubble</h1>
+        <img src="/logo2.svg" alt="DFINITY logo" />
         <p>Coded by : Francis Albores</p>
     </div>
   );

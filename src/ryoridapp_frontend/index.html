@@ -13,5 +13,14 @@
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
-
+<script>
+  function killBubble(obj) {
+    obj.style.backgroundColor = "transparent";
+    obj.style.border = "1px solid #fff";
+    var z = setTimeout(function() {
+        if (obj.parentNode)
+            obj.parentNode.removeChild(obj);
+    }, 500);
+  }
+</script>
 </html>
